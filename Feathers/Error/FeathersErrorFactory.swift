@@ -8,15 +8,15 @@
 
 import Foundation
 
-class FeathersErrorFactory {
+public class FeathersErrorFactory {
     
-    class func makeError(failureReason reason: String) -> FeathersError {
+    public class func makeError(failureReason reason: String) -> FeathersError {
         let payload: [String: Any] = ["message": reason,
                                       "name": "validation"]
         return FeathersError(payload: payload)
     }
     
-    class func makeError(fromOther error: Error) -> FeathersError {
+    public class func makeError(fromOther error: Error) -> FeathersError {
         let payload: [String: Any] = ["message": error.localizedDescription]
         return FeathersError(payload: payload)
     }
