@@ -483,6 +483,7 @@
 		EABBAE091EBFA69C00522603 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				F28AFE7E2332B43900A679A1 /* Error */,
 				EA0F0D441ED3F85A000517A4 /* Extensions */,
 				EA3017131EC7867E00114F19 /* Hooks.swift */,
 				EA954C771EC9BEEC0094FF43 /* LoggerHooks.swift */,
@@ -500,6 +501,13 @@
 				EA8CE0EB1ED7DC2800EA04F4 /* Query.swift */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		F28AFE7E2332B43900A679A1 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
