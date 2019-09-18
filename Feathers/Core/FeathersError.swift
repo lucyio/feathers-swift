@@ -21,6 +21,12 @@ public struct FeathersError {
     }
 }
 
+public enum ErrorType {
+    case network
+    case client
+    case validation
+}
+
 //public protocol FeathersError: Swift.Error {
 //
 //    var description: String { get }
