@@ -16,4 +16,8 @@ class FeathersErrorFactory {
         return FeathersError(payload: payload)
     }
     
+    class func makeError(fromOther error: Error) -> FeathersError {
+        let payload: [String: Any] = ["message": error.localizedDescription]
+        return FeathersError(payload: payload)
+    }
 }
