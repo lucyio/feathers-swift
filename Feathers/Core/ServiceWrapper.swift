@@ -83,11 +83,11 @@ final public class ServiceWrapper: ServiceType {
                 let afterHookObject = hook.object(with: .after)
                 let afterChain = afterHooks.reduce(SignalProducer(value: afterHookObject), reduceHooksClosure)
                 return afterChain.flatMap(.concat) {
-                    return $0.result != nil ? SignalProducer(value: $0.result!) : SignalProducer(error: FeathersError(FeathersNetworkError.unknown))
+                    return $0.result != nil ? SignalProducer(value: $0.result!) : SignalProducer(error: FeathersErrorFactory.makeError(failureReason: "No result found in before hooks chain!"))
                 }
                 // If the error is set, error out.
             } else if let error = hook.error {
-                return SignalProducer(error: FeathersError(error))
+                return SignalProducer(error: error)
             } else {
                 // Otherwise, execute the service request.
                 return vSelf.service.request(hook.method)
@@ -97,19 +97,19 @@ final public class ServiceWrapper: ServiceType {
                         let afterHookObject = hook.object(with: .after).objectByAdding(result: response)
                         let afterChain = afterHooks.reduce(SignalProducer(value: afterHookObject), reduceHooksClosure)
                         return afterChain.flatMap(.concat) { value in
-                            return value.result != nil ? SignalProducer(value: value.result!) : SignalProducer(error: FeathersError(FeathersNetworkError.unknown))
+                            return value.result != nil ? SignalProducer(value: value.result!) : SignalProducer(error: FeathersErrorFactory.makeError(failureReason: "No result found in after hooks chain!"))
                         }
                 }
             }
         }
         // If at any point along the chain an error is emitted, recover by running all the error hooks.
         return chain.flatMapError { [weak self] error -> SignalProducer<Response, FeathersError> in
-            guard let vSelf = self else { return SignalProducer(error: FeathersError(FeathersNetworkError.unknown)) }
-            let errorHookObject = HookObject(type: .error, app: application, service: vSelf, method: method).objectByAdding(error: error.error)
+            guard let vSelf = self else { return SignalProducer(error: FeathersErrorFactory.makeError(failureReason: "No valid service instance found to proceed.")) }
+            let errorHookObject = HookObject(type: .error, app: application, service: vSelf, method: method).objectByAdding(error: error)
             let errorChain = errorHooks.reduce(SignalProducer(value: errorHookObject), reduceHooksClosure)
             return errorChain.flatMap(.concat) { hookObject -> SignalProducer<Response, FeathersError> in
                 // If the hook error exists, send that to the user, otherwise emit the original error that caused error hooks to run.
-                return hookObject.error != nil ? SignalProducer(error: FeathersError(hookObject.error!)) : SignalProducer(error: FeathersError(error.error))
+                return hookObject.error != nil ? SignalProducer(error: hookObject.error!) : SignalProducer(error: error)
             }
         }
     }
