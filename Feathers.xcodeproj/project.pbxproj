@@ -131,6 +131,9 @@
 		EAC0BCF31EC90FF30049FB13 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE05D691EBFDB0000DA55BF /* Endpoint.swift */; };
 		EAC0BCF41EC90FF30049FB13 /* Hooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3017131EC7867E00114F19 /* Hooks.swift */; };
 		F288ED762332CA4E00D8988F /* FeathersErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288ED752332CA4E00D8988F /* FeathersErrorFactory.swift */; };
+		F288ED772332D37700D8988F /* FeathersErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288ED752332CA4E00D8988F /* FeathersErrorFactory.swift */; };
+		F288ED782332D37800D8988F /* FeathersErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288ED752332CA4E00D8988F /* FeathersErrorFactory.swift */; };
+		F288ED792332D37800D8988F /* FeathersErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288ED752332CA4E00D8988F /* FeathersErrorFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -814,6 +817,7 @@
 				EA0F0CBB1ED0B3E2000517A4 /* Response.swift in Sources */,
 				EA0F0CBA1ED0B3E2000517A4 /* Provider.swift in Sources */,
 				EA0F0CB41ED0B3E2000517A4 /* LoggerHooks.swift in Sources */,
+				F288ED772332D37700D8988F /* FeathersErrorFactory.swift in Sources */,
 				EA0F0CB31ED0B3E2000517A4 /* Hooks.swift in Sources */,
 				EA8CE0ED1ED7DC2800EA04F4 /* Query.swift in Sources */,
 				EA0F0D471ED3F87F000517A4 /* SignalProducer+Convenience.swift in Sources */,
@@ -848,6 +852,7 @@
 				EA0F0CF31ED0B46B000517A4 /* Response.swift in Sources */,
 				EA0F0CF21ED0B46B000517A4 /* Provider.swift in Sources */,
 				EA0F0CEC1ED0B46B000517A4 /* LoggerHooks.swift in Sources */,
+				F288ED782332D37800D8988F /* FeathersErrorFactory.swift in Sources */,
 				EA0F0CEB1ED0B46B000517A4 /* Hooks.swift in Sources */,
 				EA8CE0EE1ED7DC2800EA04F4 /* Query.swift in Sources */,
 				EA0F0D481ED3F87F000517A4 /* SignalProducer+Convenience.swift in Sources */,
@@ -882,6 +887,7 @@
 				EA0F0D2D1ED0B539000517A4 /* Response.swift in Sources */,
 				EA0F0D2C1ED0B539000517A4 /* Provider.swift in Sources */,
 				EA0F0D261ED0B539000517A4 /* LoggerHooks.swift in Sources */,
+				F288ED792332D37800D8988F /* FeathersErrorFactory.swift in Sources */,
 				EA0F0D251ED0B539000517A4 /* Hooks.swift in Sources */,
 				EA8CE0EF1ED7DC2800EA04F4 /* Query.swift in Sources */,
 				EA0F0D491ED3F87F000517A4 /* SignalProducer+Convenience.swift in Sources */,
