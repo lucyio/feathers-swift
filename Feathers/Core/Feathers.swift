@@ -83,7 +83,8 @@ public final class Feathers {
                     let json = object as? [String: Any] {
                     return SignalProducer(value: json)
                 }
-                return SignalProducer(error: FeathersError(FeathersNetworkError.unknown))
+                let error = FeathersErrorFactory.makeError(failureReason: "No data found in auth call")
+                return SignalProducer(error: error)
             }.on(failed: { [weak self] _ in
                 self?.authenticationStorage.accessToken = nil
                 }, value: { [weak self] value in
