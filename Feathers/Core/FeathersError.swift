@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct FeathersError {
+public struct FeathersError: Error {
     
     private let payload: [String: Any]
     
@@ -21,11 +21,10 @@ public struct FeathersError {
     }
 }
 
-public enum ErrorType {
-    case network
-    case client
-    case validation
-}
+//public enum ErrorType {
+//    case network
+//    case validation
+//}
 
 //public protocol FeathersError: Swift.Error {
 //
