@@ -20,4 +20,10 @@ public class FeathersErrorFactory {
         let payload: [String: Any] = ["message": error.localizedDescription]
         return FeathersError(payload: payload)
     }
+    
+    public class func makeClientTimeoutError() -> FeathersError {
+        let payload: [String: Any] = ["message": "No ACK found in response, client side timeout",
+                                      "name": "Timeout"]
+        return FeathersError(payload: payload)
+    }
 }
