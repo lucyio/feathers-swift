@@ -16,6 +16,10 @@ public struct FeathersError: Error {
         return payload["code"] as? Int ?? -1
     }
     
+    public var message: String {
+        return payload["message"] as? String ?? "No message found"
+    }
+    
     public init(payload: [String: Any]) {
         self.payload = payload
     }
