@@ -971,7 +971,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 5.4.5;
+				MARKETING_VERSION = 5.4.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feathersjs.Feathers-macOS";
 				PRODUCT_NAME = Feathers;
 				SDKROOT = macosx;
@@ -1000,7 +1000,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MARKETING_VERSION = 5.4.5;
+				MARKETING_VERSION = 5.4.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feathersjs.Feathers-macOS";
 				PRODUCT_NAME = Feathers;
 				SDKROOT = macosx;
@@ -1066,7 +1066,7 @@
 				INFOPLIST_FILE = Feathers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 5.4.5;
+				MARKETING_VERSION = 5.4.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feathersjs.Feathers-tvOS";
 				PRODUCT_NAME = Feathers;
 				SDKROOT = appletvos;
@@ -1093,7 +1093,7 @@
 				INFOPLIST_FILE = Feathers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 5.4.5;
+				MARKETING_VERSION = 5.4.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feathersjs.Feathers-tvOS";
 				PRODUCT_NAME = Feathers;
 				SDKROOT = appletvos;
@@ -1157,7 +1157,7 @@
 				INFOPLIST_FILE = Feathers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 5.4.5;
+				MARKETING_VERSION = 5.4.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feathersjs.Feathers-watchOS";
 				PRODUCT_NAME = Feathers;
 				SDKROOT = watchos;
@@ -1185,7 +1185,7 @@
 				INFOPLIST_FILE = Feathers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 5.4.5;
+				MARKETING_VERSION = 5.4.6;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.feathersjs.Feathers-watchOS";
 				PRODUCT_NAME = Feathers;
 				SDKROOT = watchos;
@@ -1367,7 +1367,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 5.4.5;
+				MARKETING_VERSION = 5.4.6;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swoopystudios.Feathers-iOS";
 				PRODUCT_NAME = Feathers;
@@ -1395,7 +1395,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 5.4.5;
+				MARKETING_VERSION = 5.4.6;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swoopystudios.Feathers-iOS";
 				PRODUCT_NAME = Feathers;
